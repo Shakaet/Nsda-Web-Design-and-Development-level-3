@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Software Development Company</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="top-bar d-none d-lg-block">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="mailto:info@softdev.com"><i class="bi bi-envelope"></i> info@softdev.com</a>
+                    <a href="tel:+1234567890"><i class="bi bi-telephone"></i> +1 (234) 567-890</a>
+                </div>
+                <div>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="ms-3 border-start ps-3"><i class="bi bi-box-arrow-in-right"></i> Login/Register</a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-primary" href="index.html">Soft<span class="text-dark">Dev</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item d-lg-none"><a class="nav-link" href="#">Login/Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Section -->
+    <div class="bg-primary text-white py-4 mt-1">
+        <div class="container">
+            <h1 class="fw-bold">Project Details</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item"><a href="projects.html" class="text-white text-decoration-none">Projects</a></li>
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">FinTech Dashboard</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Project Details Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Left Panel: Image Gallery -->
+                <div class="col-lg-7">
+                    <div class="zoom-container mb-3 shadow-sm rounded">
+                        <img id="mainImage" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop" class="img-fluid w-100 rounded" alt="Main Project Image">
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <div class="zoom-container rounded shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" class="img-fluid w-100" alt="Gallery Image 1" onclick="document.getElementById('mainImage').src=this.src" style="cursor:pointer;">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="zoom-container rounded shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop" class="img-fluid w-100" alt="Gallery Image 2" onclick="document.getElementById('mainImage').src=this.src" style="cursor:pointer;">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="zoom-container rounded shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop" class="img-fluid w-100" alt="Gallery Image 3" onclick="document.getElementById('mainImage').src=this.src" style="cursor:pointer;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Panel: Project Information -->
+                <div class="col-lg-5">
+                    <h2 class="fw-bold mb-3">FinTech Analytics Dashboard</h2>
+                    <p class="text-muted fs-5">A comprehensive financial analytics dashboard designed for enterprise clients to visualize real-time data, manage portfolios, and generate custom reports.</p>
+                    
+                    <div class="card border-0 bg-light mt-4">
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3">
+                                    <strong class="d-block text-dark">Client Name:</strong>
+                                    <span class="text-muted">Global Finance Corp.</span>
+                                </li>
+                                <li class="mb-3">
+                                    <strong class="d-block text-dark">Project Duration:</strong>
+                                    <span class="text-muted">6 Months (Jan 2025 - Jun 2025)</span>
+                                </li>
+                                <li class="mb-3">
+                                    <strong class="d-block text-dark">Category:</strong>
+                                    <span class="text-muted">Web Application / SaaS</span>
+                                </li>
+                                <li>
+                                    <strong class="d-block text-dark mb-2">Technologies Used:</strong>
+                                    <div>
+                                        <span class="badge bg-primary me-1">React.js</span>
+                                        <span class="badge bg-success me-1">Node.js</span>
+                                        <span class="badge bg-info me-1">PostgreSQL</span>
+                                        <span class="badge bg-secondary">AWS</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4 class="fw-bold">Project Challenges</h4>
+                        <p class="text-muted">The main challenge was handling millions of transactions in real-time without compromising system performance or data integrity. We implemented a robust caching layer and optimized database queries to achieve sub-second response times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Projects Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <h3 class="fw-bold mb-4 text-center">Related Projects</h3>
+            <div class="row g-4 justify-content-center">
+                <!-- Related 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="zoom-container">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" class="card-img-top" alt="Related Project 1">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="projectDetails.html" class="text-dark text-decoration-none">HealthTracker Pro</a></h5>
+                            <a href="projectDetails.html" class="text-primary text-decoration-none fw-bold">View Project <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Related 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="zoom-container">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" class="card-img-top" alt="Related Project 2">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="projectDetails.html" class="text-dark text-decoration-none">GlobalMart Platform</a></h5>
+                            <a href="projectDetails.html" class="text-primary text-decoration-none fw-bold">View Project <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Big Footer Section -->
+    <footer class="footer-big">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="fw-bold text-white mb-3">Soft<span class="text-primary">Dev</span></h3>
+                    <p>We are a leading software development company dedicated to building innovative and scalable digital solutions for businesses worldwide.</p>
+                    <div class="mt-4">
+                        <h6 class="text-white">Current Date & Time:</h6>
+                        <span id="current-datetime" class="badge bg-primary text-white p-2">Loading...</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <ul class="mb-4">
+                        <li><i class="bi bi-geo-alt me-2"></i> 123 Tech Boulevard, Innovation City, 10001</li>
+                        <li><i class="bi bi-telephone me-2"></i> +1 (234) 567-890</li>
+                        <li><i class="bi bi-envelope me-2"></i> info@softdev.com</li>
+                    </ul>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="fs-4"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="fs-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="fs-4"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter to receive the latest tech news and updates.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Software Development Company. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
